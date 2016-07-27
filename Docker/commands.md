@@ -56,3 +56,25 @@ $ docker run -d -P --name mynginx nginx
 ```
 $ docker rename happy_einstein mycontainer
 ```
+
+## ポート
+
+tomcat コンテナのポート 8080 をホスト側のポート 80 に割り当てる。
+
+```
+$ docker run -d -p 80:8080 tomcat
+```
+
+nginx コンテナのポート 80 をホスト側に割り当て、同時に nginx コンテナのポート 8080 をホスト側のポート 81 に割り当てる。
+
+```
+$ docker run -d -p 80:80 -p 81:8080 nginx
+```
+
+ポートの割り当てを確認する。
+
+```
+$ docker port
+```
+
+
