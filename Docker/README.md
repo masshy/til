@@ -113,8 +113,6 @@ stopするだけ。起動はstartするだけ。
 $ docker-machine start test
 ```
 
-## Dockerfile
-
 
 ## Docker hubにpushできない
 
@@ -130,6 +128,8 @@ $ docker push <repository>
 `<repository>`はタグ部分含め、揃えるのを忘れずに。
 
 (参考URL:http://qiita.com/ms2sato/items/237df26895707a8192cd)
+
+## 
 
 
 
