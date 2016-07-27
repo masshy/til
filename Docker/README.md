@@ -13,13 +13,13 @@
 
 ## インストールと設定
 
-## docker-toolboxインストール
+### docker-toolboxインストール
 
 docker-toolboxをインストール。GUIに沿うだけ。
 
 https://www.docker.com/products/docker-toolbox
 
-## VM環境作成
+### VM環境作成
 
 docker-toolboxのインストール完了後、一発目に打つコマンド。
 ```
@@ -112,6 +112,7 @@ stopするだけ。起動はstartするだけ。
 ```
 $ docker-machine start test
 ```
+
 
 
 ## Docker hubにpushできない
