@@ -9,6 +9,8 @@
 * 複数人で同じ環境をローカルで使える
 * 動作確認ができたイメージをSTGや本番にそのまま持っていける
 
+
+
 ## インストールと設定
 
 ## docker-toolboxインストール
@@ -36,7 +38,7 @@ $ eval "$(docker-machine env test)"
 ```
 $ docker run centos:6.6 echo hello world
 ```
-OSはCentOS6.6を指定し、コンテナ内で```echo```を実行する。
+OSはCentOS6.6を指定し、コンテナ内で`echo`を実行する。
 
 指定されたOSイメージが無ければインストールを行いコンテナを作成。最後に
 
@@ -105,10 +107,30 @@ Virtualbox上のdocker仮想環境testを停止するコマンド。
 ```
 $ docker-machine stop test
 ```
-
 stopするだけ。起動はstartするだけ。
-
 
 ```
 $ docker-machine start test
 ```
+
+## Dockerfile
+
+
+## Docker hubにpushできない
+
+Docker hubにpushしたいけどできない。`docker login`もやった、repository名も合ってる。なのに`docker push`すると`Repository does not exist:`なんて言われる時。
+
+repository名とimageidが紐付いていないのが原因。以下のコマンドで紐付ける。
+
+```
+$ docker tag <imageid> <repository>
+$ docker push <repository>
+```
+
+`<repository>`はタグ部分含め、揃えるのを忘れずに。
+
+(参考URL:http://qiita.com/ms2sato/items/237df26895707a8192cd)
+
+
+
+
