@@ -41,9 +41,26 @@ CMD ping 127.0.0.1 –c 30
 CMD [“ping”, “127.0.0.1”, “-c”, “30”]
 ```
 
+ENTRYPOINT命令との関係から、CMD命令にはコマンドに与える引数のみを書くこともできる。
+
+```
+CMD 127.0.0.1
+```
+
+
 ## ENTRYPOINT命令
 
-コンテナを実行に実行されるコマンドを記述。
+コンテナを実行に実行されるコマンドを記述。ENTRYPOINT命令があるとき、CMD命令と引数は無視される。
+
+```
+ENTRYPOINT ping
+```
+
+## ENTRYPOINT と CMD
+
+* `docker run`で引数が指定されれば、ENTRYPOINT命令のコマンドにその引数が適用される。
+
+* 引数が指定されなければ、CMD命令の引数がENTRYPOINT命令のコマンドに適用される。
 
 ## EXPOSE命令
 
