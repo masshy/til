@@ -81,7 +81,7 @@ $ docker port
 
 ## --add-host
 
-現在はrun時に --add-host=[] オプションでホストを注入出来る。
+現在はrun時に --add-host=[] オプションで/etc/hostsにホストを注入出来る。
 
 ```
 docker run -t -i --add-host=test.example.co.jp:127.0.0.1 --add-host=test2.example.co.jp:127.0.0.1 hogehoge /bin/bash
