@@ -1,6 +1,6 @@
 ## environment
 
-developmentや本番環境などで設定を分けられる。
+開発環境や本番環境などで設定を分けられる。
 
 ```
 > php codecept.phar generate:environment development
