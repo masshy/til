@@ -1,6 +1,6 @@
 ## codeceptionとは
 
-phpのテストツール。
+phpのテストツール。実行環境にphpunitを使っている。
 
 ## 使い方
 
@@ -9,3 +9,4 @@ codeception.pharをダウンロードしたら、同じディレクトリで`exa
 ```
 > php codeception.phar generate:suite example
 ```
+
