@@ -10,7 +10,7 @@
 
 ### 設定ファイル(<env>.yml)の書き方
 
-<suitename>.suite.ymlのconfigを上書きする感じで。
+/<suitename/>.suite.ymlのconfigを上書きする感じで。
 
 * Example.suite.yml
 
