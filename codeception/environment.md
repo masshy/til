@@ -12,7 +12,7 @@ developmentやstaging、本番環境などで設定を分けられる。
 
 <suitename>.suite.ymlのconfigを上書きする感じで。
 
-Example.suite.yml
+* Example.suite.yml
 
 ```
 class_name: ExampleTester
@@ -28,8 +28,9 @@ config:
 ```
 
 
+* development.php
 
-```development.php
+```
 modules:
     config:
         \Helper\ExampleHelper:
