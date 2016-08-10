@@ -79,4 +79,12 @@ $ docker run -d -p 80:80 -p 81:8080 nginx
 $ docker port
 ```
 
+## --add-host
+
+現在はrun時に --add-host=[] オプションでホストを注入出来る。
+
+```
+docker run -t -i --add-host=test.example.co.jp:127.0.0.1 --add-host=test2.example.co.jp:127.0.0.1 hogehoge /bin/bash
+```
+
 
