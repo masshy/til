@@ -10,7 +10,20 @@
 
 ### 設定ファイル(<env>.yml)の書き方
 
-\<suitename\>.suite.ymlのconfigを上書きする感じで。
+module, helper単位で設定を書く。
+
+```
+modules:
+    config:
+        ModuleA:
+            A: 'a'
+            B: 23
+        \Helper\ExampleHelper:
+            FOO: 'bbb'
+            BAR: 123
+```
+
+\<suitename\>.suite.ymlのconfigは上書きされる。
 
 * Example.suite.yml
 
