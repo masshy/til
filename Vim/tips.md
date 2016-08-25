@@ -1,6 +1,6 @@
 # vim tips
 
-sublime text ほど簡単じゃない
+sublime text より(便利|不便) 
 
 ## ファイルを指定行から開く
 
