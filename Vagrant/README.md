@@ -45,11 +45,14 @@ $ vagrant reload
 
 ### default: Warning: Authentication failure. Retrying...が止まらない
 
+正常な場合でも10回くらいは表示されるっぽいが、延々と終わらない場合。
+
 公開鍵のパーミッションがおかしいと発生する。sshで仮想環境に接続し
 ```
 $ chmod 600 /home/vagrant/.ssh/authorized_keys
 ```
 のコマンドを実行した後、Vagrantを再起動。
+
 
 ### 割り振ったIPアドレスが反映されないとき
 
