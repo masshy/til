@@ -7,7 +7,7 @@
 gitで色々やってて無視したいファイルができたら、.gitignoreに当該ファイルを追加し反映させる。
 
 ```
-> git rm -r --cached <filename>
+$ git rm -r --cached <filename>
 ```
 
 キャッシュを削除したので、再度コミットするとファイルが消える。
@@ -22,7 +22,19 @@ gitで色々やってて無視したいファイルができたら、.gitignore�
 以下のコマンドを打つとvimが開いて、そこで修正する。
 
 ```
-> git commit --amend
+$ git commit --amend
+```
+
+## ローカルをリモートで上書き
+
+ローカルのファイルを更新していると、pullするとエラーになる。
+
+リーモトの内容で上書きして気もいい場合は次のコマンドを。
+
+
+```
+$ git fetch origin
+$ git reset --hard origin/<branch-name>
 ```
 
 
