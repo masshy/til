@@ -10,15 +10,25 @@ nodebrewをインストール。
 $ brew install nodebrew
 ```
 
+nodebrewが管理するバージョンを使うために.bash_profileに以下の文を追加。
+
+```
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+```
+
+.bash_profile更新。
+
+```
+source .bash_profile
+```
+
 nodebrewで指定するバージョンのnodeをインストールする。
 今回は安定版。
-
 インストールする前に、ホームディレクトリに`.nodebrew/src`というディレクトリを作っておく。
 
 ```
 $ mkdir ~/.nodebrew
 $ mkdir ~/.nodebrew/src
-$ brew install nodebrew
 $ nodebrew install-binary stable
 ```
 
